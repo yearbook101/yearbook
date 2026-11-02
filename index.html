@@ -14,11 +14,11 @@
     <div class="gate-card">
       <p class="school-kicker">Banner Christian School</p>
       <h1>yearbook2026</h1>
-      <p class="gate-sub">Yearbook · Enter the shared password to open</p>
-      <form id="gate-form">
+      <p class="gate-sub">Enter the shared password to open</p>
+      <form id="gate-form" action="javascript:void(0)" method="dialog">
         <label class="sr-only" for="pw">Password</label>
         <input id="pw" type="password" autocomplete="current-password" placeholder="Password" required />
-        <button type="submit">Open Yearbook</button>
+        <button type="submit" id="open-btn">Open yearbook2026</button>
       </form>
       <p id="gate-error" class="gate-error" hidden>Wrong password. Try again.</p>
     </div>
