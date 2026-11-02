@@ -1,5 +1,5 @@
 (() => {
-  const PASSWORD = "Classof2026";
+  const PASSWORD = "Banner2026";
   const STORAGE_KEY = "bcs-yearbook-2026";
 
   const gate = document.getElementById("gate");
