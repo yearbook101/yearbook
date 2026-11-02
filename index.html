@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Banner Christian School · Class of 2026 Yearbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="gate" class="gate" aria-live="polite">
+    <div class="gate-card">
+      <p class="school-kicker">Banner Christian School</p>
+      <h1>Class of 2026</h1>
+      <p class="gate-sub">Yearbook · Enter the shared password to open</p>
+      <form id="gate-form">
+        <label class="sr-only" for="pw">Password</label>
+        <input id="pw" type="password" autocomplete="current-password" placeholder="Password" required />
+        <button type="submit">Open Yearbook</button>
+      </form>
+      <p id="gate-error" class="gate-error" hidden>Wrong password. Try again.</p>
+    </div>
+  </div>
+
+  <div id="app" class="app" hidden>
+    <header class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <p class="school-kicker">Banner Christian School · Richmond, VA</p>
+      <h1 class="brand">Class of 2026</h1>
+      <p class="lede">A living yearbook — scan a QR code in the book to jump straight to a chapter.</p>
+      <nav class="toc" aria-label="Chapters">
+        <a href="#campus">Campus</a>
+        <a href="#classes">Classes</a>
+        <a href="#sports">Sports</a>
+        <a href="#clubs">Clubs</a>
+        <a href="#messages">Messages</a>
+        <a href="#videos">Videos</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="campus" class="chapter">
+        <p class="chapter-num">01</p>
+        <h2>Campus</h2>
+        <p>Life around Banner — halls, chapel, and the places we grew up in together.</p>
+        <div class="photo-grid placeholder">
+          <div class="ph">Add campus photos here</div>
+          <div class="ph">Drop images into <code>assets/</code></div>
+        </div>
+      </section>
+
+      <section id="classes" class="chapter">
+        <p class="chapter-num">02</p>
+        <h2>Classes</h2>
+        <p>Portraits and class pages. Each QR in the printed book can open a student’s section later.</p>
+        <div class="photo-grid placeholder">
+          <div class="ph">Senior portraits</div>
+          <div class="ph">Homeroom grids</div>
+        </div>
+      </section>
+
+      <section id="sports" class="chapter">
+        <p class="chapter-num">03</p>
+        <h2>Sports</h2>
+        <p>Bearcats on the field, court, and track — Sports Day and season highlights.</p>
+        <div class="photo-grid placeholder">
+          <div class="ph">Sports Day</div>
+          <div class="ph">Team photos</div>
+        </div>
+      </section>
+
+      <section id="clubs" class="chapter">
+        <p class="chapter-num">04</p>
+        <h2>Clubs</h2>
+        <p>From worship to robotics — the groups that made after-school feel like home.</p>
+        <div class="photo-grid placeholder">
+          <div class="ph">Club fair</div>
+          <div class="ph">Leadership</div>
+        </div>
+      </section>
+
+      <section id="messages" class="chapter">
+        <p class="chapter-num">05</p>
+        <h2>Messages</h2>
+        <p>Notes from friends, teachers, and family. This chapter can keep growing after print day.</p>
+        <div class="message-box">
+          <p>“Christ first, education second to none.”</p>
+        </div>
+      </section>
+
+      <section id="videos" class="chapter">
+        <p class="chapter-num">06</p>
+        <h2>Videos</h2>
+        <p>Embed highlight reels and chapel clips here when ready.</p>
+        <div class="photo-grid placeholder">
+          <div class="ph wide">Video links coming soon</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Banner Christian School · Class of 2026 Yearbook</p>
+      <p class="fine">QR codes use <code>/go/…</code> links so printed pages stay valid if chapters move.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

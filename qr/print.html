@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Class of 2026 · Printable QR Codes</title>
+  <style>
+    @page { margin: 0.6in; }
+    body { font-family: Georgia, serif; color: #132238; margin: 24px; }
+    h1 { font-size: 1.6rem; margin: 0 0 4px; }
+    .sub { color: #555; margin: 0 0 24px; font-size: 0.95rem; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 20px; }
+    figure { margin: 0; text-align: center; page-break-inside: avoid; }
+    img { width: 180px; height: 180px; }
+    figcaption { margin-top: 8px; font-size: 0.9rem; line-height: 1.35; }
+    code { font-size: 0.8rem; }
+    .hint { margin-top: 28px; font-size: 0.85rem; color: #666; max-width: 60ch; }
+    @media print {
+      body { margin: 0; }
+      .noprint { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Banner Christian School · Class of 2026</h1>
+  <p class="sub">Printable QR sheet · targets https://yearbook101.github.io/yearbook/go/…</p>
+  <p class="noprint"><button onclick="window.print()">Print this page</button></p>
+  <div class="grid">
+    
+    <figure>
+      <img src="campus.svg" alt="QR for campus" width="180" height="180" />
+      <figcaption><strong>Campus</strong><br/><code>/go/campus/</code></figcaption>
+    </figure>
+    <figure>
+      <img src="classes.svg" alt="QR for classes" width="180" height="180" />
+      <figcaption><strong>Classes</strong><br/><code>/go/classes/</code></figcaption>
+    </figure>
+    <figure>
+      <img src="sports.svg" alt="QR for sports" width="180" height="180" />
+      <figcaption><strong>Sports</strong><br/><code>/go/sports/</code></figcaption>
+    </figure>
+    <figure>
+      <img src="clubs.svg" alt="QR for clubs" width="180" height="180" />
+      <figcaption><strong>Clubs</strong><br/><code>/go/clubs/</code></figcaption>
+    </figure>
+    <figure>
+      <img src="messages.svg" alt="QR for messages" width="180" height="180" />
+      <figcaption><strong>Messages</strong><br/><code>/go/messages/</code></figcaption>
+    </figure>
+    <figure>
+      <img src="videos.svg" alt="QR for videos" width="180" height="180" />
+      <figcaption><strong>Videos</strong><br/><code>/go/videos/</code></figcaption>
+    </figure>
+  </div>
+  <p class="hint">Print tip: keep each code at least ~2×2 cm (¾ inch). Test-scan from a phone before sending the book to print. These mid-links stay valid even if chapter anchors move later.</p>
+</body>
+</html>
