@@ -9,7 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="home" data-page="home">
+
   <div id="gate" class="gate" aria-live="polite">
     <div class="gate-card">
       <p class="school-kicker">Banner Christian School</p>
@@ -24,113 +25,25 @@
     </div>
   </div>
 
-  <div id="app" class="app" hidden>
-    <header class="hero">
+  <div id="app" class="app home-app" hidden>
+    <header class="hero home-hero">
       <div class="hero-glow" aria-hidden="true"></div>
       <p class="school-kicker">Banner Christian School · Richmond, VA</p>
       <h1 class="brand">yearbook<span class="year-mark">26</span></h1>
-      <p class="lede">A living yearbook — scan a QR code in the book to jump straight to a chapter or event.</p>
-      <nav class="toc" aria-label="Chapters">
-        <a href="#campus">Campus</a>
-        <a href="#classes">Classes</a>
-        <a href="#events">Events</a>
-        <a href="#clubs">Clubs</a>
-        <a href="#messages">Messages</a>
-        <a href="#videos">Videos</a>
-      </nav>
-      <nav class="toc toc-events" aria-label="Events">
-        <a href="#pickleball">Pickleball</a>
-        <a href="#track">Track</a>
-        <a href="#basketball">Basketball</a>
-      </nav>
+      <p class="lede">Pick a category to open its page.</p>
     </header>
 
-    <main>
-      <section id="campus" class="chapter">
-        <p class="chapter-num">01</p>
-        <h2>Campus</h2>
-        <p>Life around Banner — halls, chapel, and the places we grew up in together.</p>
-        <div class="photo-grid placeholder">
-          <div class="ph">Add campus photos here</div>
-          <div class="ph">Drop images into <code>assets/</code></div>
-        </div>
-      </section>
-
-      <section id="classes" class="chapter">
-        <p class="chapter-num">02</p>
-        <h2>Classes</h2>
-        <p>Portraits and class pages. Each QR in the printed book can open a student’s section later.</p>
-        <div class="photo-grid placeholder">
-          <div class="ph">Senior portraits</div>
-          <div class="ph">Homeroom grids</div>
-        </div>
-      </section>
-
-      <section id="events" class="chapter">
-        <p class="chapter-num">03</p>
-        <h2>Events</h2>
-        <p>Game days and meets — each event has its own spot (and its own QR mid-link).</p>
-
-        <article id="pickleball" class="event">
-          <h3>Pickleball</h3>
-          <p>Lunch leagues, tournament brackets, and after-school rallies on the courts.</p>
-          <div class="photo-grid placeholder">
-            <div class="ph">Pickleball photos</div>
-            <div class="ph">Tournament day</div>
-          </div>
-        </article>
-
-        <article id="track" class="event">
-          <h3>Track</h3>
-          <p>Sprints, relays, and field events — Sports Day energy from the starting gun to the finish.</p>
-          <div class="photo-grid placeholder">
-            <div class="ph">Track meet</div>
-            <div class="ph">Relay handoffs</div>
-          </div>
-        </article>
-
-        <article id="basketball" class="event">
-          <h3>Basketball</h3>
-          <p>Bearcats on the hardwood — tip-offs, buzzer-beaters, and sideline cheers.</p>
-          <div class="photo-grid placeholder">
-            <div class="ph">Game night</div>
-            <div class="ph">Team huddle</div>
-          </div>
-        </article>
-      </section>
-
-      <section id="clubs" class="chapter">
-        <p class="chapter-num">04</p>
-        <h2>Clubs</h2>
-        <p>From worship to robotics — the groups that made after-school feel like home.</p>
-        <div class="photo-grid placeholder">
-          <div class="ph">Club fair</div>
-          <div class="ph">Leadership</div>
-        </div>
-      </section>
-
-      <section id="messages" class="chapter">
-        <p class="chapter-num">05</p>
-        <h2>Messages</h2>
-        <p>Notes from friends, teachers, and family. This chapter can keep growing after print day.</p>
-        <div class="message-box">
-          <p>“Christ first, education second to none.”</p>
-        </div>
-      </section>
-
-      <section id="videos" class="chapter">
-        <p class="chapter-num">06</p>
-        <h2>Videos</h2>
-        <p>Embed highlight reels and chapel clips here when ready.</p>
-        <div class="photo-grid placeholder">
-          <div class="ph wide">Video links coming soon</div>
-        </div>
-      </section>
+    <main class="category-grid" aria-label="Categories">
+      <a class="cat-card" href="campus/"><span class="cat-num">01</span><span class="cat-name">Campus</span><span class="cat-go">Open →</span></a>
+      <a class="cat-card" href="classes/"><span class="cat-num">02</span><span class="cat-name">Classes</span><span class="cat-go">Open →</span></a>
+      <a class="cat-card" href="events/"><span class="cat-num">03</span><span class="cat-name">Events</span><span class="cat-go">Open →</span></a>
+      <a class="cat-card" href="clubs/"><span class="cat-num">04</span><span class="cat-name">Clubs</span><span class="cat-go">Open →</span></a>
+      <a class="cat-card" href="messages/"><span class="cat-num">05</span><span class="cat-name">Messages</span><span class="cat-go">Open →</span></a>
+      <a class="cat-card" href="videos/"><span class="cat-num">06</span><span class="cat-name">Videos</span><span class="cat-go">Open →</span></a>
     </main>
 
     <footer class="site-footer">
       <p>Banner Christian School · yearbook<span class="year-mark">26</span></p>
-      <p class="fine">QR codes use <code>/go/…</code> links so printed pages stay valid if chapters move.</p>
     </footer>
   </div>
 

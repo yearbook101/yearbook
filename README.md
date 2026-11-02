@@ -1,21 +1,24 @@
 # Banner Christian School · yearbook
 
-Static yearbook site hosted on GitHub Pages.
+Static multi-page yearbook on GitHub Pages.
 
-- **Live site:** https://yearbook101.github.io/yearbook/
+- **Home:** https://yearbook101.github.io/yearbook/
 - **Password:** `Banner2026`
 - **QR print sheet:** https://yearbook101.github.io/yearbook/qr/print.html
 
-## Mid-links
+## Pages
 
-| Page | URL |
-|------|-----|
-| Campus | `/go/campus/` |
-| Classes | `/go/classes/` |
-| Events | `/go/events/` |
-| Pickleball | `/go/pickleball/` |
-| Track | `/go/track/` |
-| Basketball | `/go/basketball/` |
-| Clubs | `/go/clubs/` |
-| Messages | `/go/messages/` |
-| Videos | `/go/videos/` |
+| Page | Path |
+|------|------|
+| Home | `/` |
+| Campus | `/campus/` |
+| Classes | `/classes/` |
+| Events | `/events/` |
+| Pickleball | `/events/pickleball/` |
+| Track | `/events/track/` |
+| Basketball | `/events/basketball/` |
+| Clubs | `/clubs/` |
+| Messages | `/messages/` |
+| Videos | `/videos/` |
+
+QR mid-links still use `/go/…` and redirect to these pages.
