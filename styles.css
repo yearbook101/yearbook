@@ -67,6 +67,19 @@ body {
   line-height: 1.05;
   color: var(--white);
 }
+.year-mark {
+  margin-left: 0.12em;
+  font-size: 0.42em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  vertical-align: super;
+  color: var(--gold-soft);
+  opacity: 0.9;
+}
+.site-footer .year-mark {
+  vertical-align: baseline;
+  font-size: 0.75em;
+}
 .gate-sub, .lede {
   margin: 14px 0 0;
   color: var(--mist);
@@ -149,6 +162,14 @@ button:hover { filter: brightness(1.05); }
 .toc a:hover {
   background: color-mix(in srgb, var(--gold) 18%, transparent);
 }
+.toc-events {
+  margin-top: 12px;
+}
+.toc-events a {
+  border-color: color-mix(in srgb, var(--mist) 28%, transparent);
+  font-size: 0.86rem;
+  padding: 8px 12px;
+}
 
 main {
   width: min(980px, calc(100% - 32px));
@@ -175,6 +196,24 @@ main {
   font-size: clamp(1.8rem, 4vw, 2.6rem);
 }
 .chapter > p {
+  margin: 0;
+  color: var(--mist);
+  max-width: 54ch;
+  line-height: 1.55;
+}
+.event {
+  scroll-margin-top: 24px;
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.event h3 {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  color: var(--gold-soft);
+}
+.event > p {
   margin: 0;
   color: var(--mist);
   max-width: 54ch;
